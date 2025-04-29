@@ -169,6 +169,7 @@ void SaveManager::LoadRandomizerVersion1() {
                 randoContext->overrides[location].SetLocation(location);
                 SaveManager::Instance->LoadData("fakeRgID", randoContext->overrides[location].RefLooksLike());
                 SaveManager::Instance->LoadData("trickName", randoContext->overrides[location].GetTrickName().english);
+                SaveManager::Instance->LoadData("trickName", randoContext->overrides[location].GetTrickName().german);
                 SaveManager::Instance->LoadData("trickName", randoContext->overrides[location].GetTrickName().french);
             }
         });
@@ -257,6 +258,8 @@ void SaveManager::LoadRandomizerVersion2() {
                     Rando::ItemOverride(static_cast<RandomizerCheck>(i), rg);
                 SaveManager::Instance->LoadData(
                     "trickName", randoContext->overrides[static_cast<RandomizerCheck>(i)].GetTrickName().english);
+                SaveManager::Instance->LoadData(
+                    "trickName", randoContext->overrides[static_cast<RandomizerCheck>(i)].GetTrickName().german);
                 SaveManager::Instance->LoadData(
                     "trickName", randoContext->overrides[static_cast<RandomizerCheck>(i)].GetTrickName().french);
             }
@@ -396,6 +399,7 @@ void SaveManager::LoadRandomizerVersion3() {
                                                 Rando::ItemOverride(static_cast<RandomizerCheck>(i), rg));
                 SaveManager::Instance->LoadStruct("trickName", [&]() {
                     SaveManager::Instance->LoadData("english", randoContext->GetItemOverride(i).GetTrickName().english);
+                    SaveManager::Instance->LoadData("german", randoContext->GetItemOverride(i).GetTrickName().german);
                     SaveManager::Instance->LoadData("french", randoContext->GetItemOverride(i).GetTrickName().french);
                 });
             }
@@ -493,9 +497,10 @@ void SaveManager::SaveRandomizer(SaveContext* saveContext, int sectionID, bool f
                 SaveManager::Instance->SaveStruct("trickName", [&]() {
                     SaveManager::Instance->SaveData("english",
                                                     randoContext->GetItemOverride(i).GetTrickName().GetEnglish());
+                    SaveManager::Instance->SaveData("german",
+                                                    randoContext->GetItemOverride(i).GetTrickName().GetGerman());
                     SaveManager::Instance->SaveData("french",
                                                     randoContext->GetItemOverride(i).GetTrickName().GetFrench());
-                    // TODO: German (trick names don't have german translations yet)
                 });
             }
             if (randoContext->GetItemLocation(i)->HasCustomPrice()) {
