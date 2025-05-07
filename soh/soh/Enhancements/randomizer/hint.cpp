@@ -358,10 +358,12 @@ const CustomMessage Hint::GetHintMessage(MessageFormat format, uint8_t id) const
     }
 
     hintText.InsertNames(toInsert);
+    hintText.SetSingularPlural();
 
     if (num != 0) {
         hintText.InsertNumber(num);
     }
+
 
     if (format == MF_FORMATTED) {
         hintText.Format();
