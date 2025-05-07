@@ -306,7 +306,7 @@ void InitTrickNames() {
     trickNameTable[RG_ZELDAS_LETTER] = {
         Text{ "Ruto's Letter", "Lettre de Ruto", "Rutos Brief" }, // "Carta de Ruto"
         Text{ "Royal Letter", "Lettre Eoyale", "Royaler Brief" }, // "Carta para Kafei"
-        Text{ "Zelda's Business Card", "Carta", "Zeldas Visitenkarte" }, // "Carte d'affaires de Zelda"
+        Text{ "Zelda's Business Card", "Carte d'affaires de Zelda", "Zeldas Visitenkarte" }, // "Carta"
         Text{ "Letter to Kafei", "Lettre pour Kafei", "Brief an Kafei" }, // "Carta para Kafei"
         Text{ "Goat's Letter", "Lettre de la Chèvre", "Brief der Ziege" }, // "Carta de la Cabra"
         Text{ "Maggie's Letter", "Lettre de Maggy", "Dolores' Brief" }, // "Carta de Dolores"
@@ -344,7 +344,7 @@ void InitTrickNames() {
     trickNameTable[RG_FARORES_WIND] = {
         Text{ "Faron's Wind", "Vent de Firone", "Phirones Donnersturm" }, // "Viento de Farone"
         Text{ "Farore's Windfall", "Zéphyr de Farore", "Farores Wind" }, // "Valor de Farore"
-        Text{ "Tingle Air", "Tingle Air", "Tingle Luft" }, // "Tingle de aire"
+        Text{ "Tingle Air", "Tingle de aire", "Tingle Luft" }, // "Tingle Air"
         Text{ "Travel Medallion", "Amulette de téléportation", "Teleport-Medaillon" }, // "Medallón Maligno"
         Text{ "Irene's Taxi", "Le taxi d'Aëline", "Irenes Taxi" }, // "El taxi de Airín"
     };
@@ -423,7 +423,7 @@ void InitTrickNames() {
     };
     trickNameTable[RG_POACHERS_SAW] = {
         Text{ "Carpenter's Saw", "Scie du charpentier", "Zimmermannssäge" }, // "Sierra del carpintero"
-        Text{ "Poacher's Sword", "Hache du chasseur", "Zimmermannsschwert" }, // "Espada del capataz"
+        Text{ "Poacher's Sword", "Hache du chasseur", "Wildererschwert" }, // "Espada del capataz"
         Text{ "Ancient Bladesaw", "Longue Épée Archéonique", "Antike Großsäge" }, // "Mandoble ancestral"
         Text{ "Woodcutter's Axe", "Hache du Bûcheron", "Holzfälleraxt" }, // "Hacha de leñador"
         Text{ "Grog's Saw", "Scie de Grog", "Grogs Säge" }, // "Sierra del Cazador Furtivo"
