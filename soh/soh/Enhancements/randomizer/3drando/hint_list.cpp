@@ -1652,7 +1652,7 @@ void StaticData::HintTable_Init() {
                                             /*french*/ "Selon moi, Ingo ne fait pas un très bon geôlier."));
 
     hintTextTable[RHT_JUNK50] = HintText(CustomMessage("You found a spiritual Stone! By which I mean, I worship Nayru.",
-                                            /*german*/ "Du hast einen Heiligen Stein gefunden!^ Also... eigentlich heißt das nur, daß ich Nayru verehre.",
+                                            /*german*/ "Du hast einen Heiligen Stein gefunden!^Also... eigentlich heißt das nur, daß ich Nayru verehre.",
                                             /*french*/ "Vous avez trouvé une Pierre Ancestrale! En effet, je vénère la déesse Hylia."));
 
     hintTextTable[RHT_JUNK51] = HintText(CustomMessage("Open your eyes.^Open your eyes.^Wake up, @.",
@@ -1977,7 +1977,7 @@ void StaticData::HintTable_Init() {
 
 
     hintTextTable[RHT_BRIDGE_VANILLA_HINT] = HintText(CustomMessage("$6The awakened ones require the #Shadow and Spirit Medallions# as well as the #Light Arrows#.^",
-                                                        /*german*/ "$6Die Weisen, die darauf warten, &daß der Held das #Amulett des Schattens, Amulett der Geister# &und die #Licht-Pfeile# sammelt.^",
+                                                        /*german*/ "$6Die Weisen, die darauf warten,&daß der Held das #Amulett des Schattens, Amulett der Geister#&und die #Licht-Pfeile# sammelt.^",
                                                         /*french*/ "$6Les êtres de sagesse attendront le héros muni des #Médaillons de l'Ombre et l'Esprit# et des #Flèches de Lumière#.^",
                                                                    {QM_RED, QM_YELLOW}));
                                                      // /*spanish*/$6Los sabios aguardarán a que el héroe obtenga tanto el #Medallón de las Sombras y el del Espíritu# junto
@@ -2034,7 +2034,7 @@ void StaticData::HintTable_Init() {
                                                            // /*spanish*/$bY obtendrás la llave del #señor del mal# desde el #inicio#.^
 
     hintTextTable[RHT_GANON_BK_VANILLA_HINT] = HintText(CustomMessage("$bAnd the #evil one#'s key will be kept in a big chest #inside its tower#.^",
-                                                           /*german*/ "$bUnd der #Schlüssel des Bösen#, &wird in der großen Truhe &#im Teufelsturm# zu finden sein.^",
+                                                           /*german*/ "$bUnd der #Schlüssel des Bösen#,&wird in der großen Truhe&#im Teufelsturm# zu finden sein.^",
                                                            /*french*/ "$bAussi, la #clé du Malin# sera encoffrée #dans sa tour#.^",
                                                                       {QM_PINK, QM_LBLUE}));
                                                         // /*spanish*/$bY la llave del #señor del mal# aguardará en un gran cofre de #su torre#.^
@@ -2203,7 +2203,7 @@ void StaticData::HintTable_Init() {
                                                                     // $8#[[1]]#...^$3#[[2]]#...^$4#[[3]]#...^$5#[[4]]#...^$6#[[5]]#...^$7#[[6]]#...^
 
     hintTextTable[RHT_ADULT_ALTAR_TEXT_END] = HintText(CustomMessage("$kTogether with the Hero of Time, the awakened ones will return the light of peace to the world...",
-                                                        /*german*/ "$kZusammen mit dem Auserwählten werden diese ihre Kräfte &einsetzen, um der Welt den &Frieden wiederzugeben.",
+                                                        /*german*/ "$kZusammen mit dem Auserwählten werden diese ihre Kräfte&einsetzen, um der Welt den&Frieden wiederzugeben.",
                                                         /*french*/ "$kEnsemble avec le Héros du Temps, ces Sages emprisonneront le mal et réinstaureront la lumière de paix dans le monde..."));
                                                         // /*spanish*/Con el Héroe del Tiempo, aquellos&que despierten detendrán el mal y&volverán al mundo de luz la paz...
 

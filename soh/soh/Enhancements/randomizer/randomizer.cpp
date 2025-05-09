@@ -270,7 +270,7 @@ static const char* germanRupeeNames[114] = {
     "Schilling",       "Schokobon",     "Seelen",             "Septime",         "Shitcoin",     "Smaragde",        "Solana",      "Sosis",             "Steine",      "Sterne",
     "Sternis",         "Tael",          "Taler",              "Tokens",          "Wagenchips",   "Won",             "Wumpas",      "Yen",               "Yuan",        "Zenny",
     "M\x93use",        "M\x9Enzen",     "Kr\x9Bten",          "D\x9Bner",        "W\x9Erstchen", "Kn\x9B" "del",    "R\x9Bsti",    "H\x9Brnli",         "R\x9E""ebli", "K\x9B""fte",
-    "Bratw\x9E""rste", "Br\x98""tchen", "Gummib\x93""bären",  "Moorh\x9E""hner"
+    "Bratw\x9E""rste", "Br\x98""tchen", "Gummib\x93""ren",  "Moorh\x9E""hner"
 };
 
 static const char* frenchRupeeNames[40] = {
@@ -509,7 +509,7 @@ void Randomizer::LoadMerchantMessages() {
             "beans!^Anyway, want to buy #[[1]]# for #[[2]] Rupees#?\x1B#Yes&No#",
             /*german*/
             "Ich habe versucht ein Vertreter für #Wundererbsen# zu werden, doch meine Verhandlungskünste waren nicht die Bohne wert. Ach egal...^"
-            "Willst Du #[[1]]#?&Deine letzte Chance!^ Mein Spezial-Preis!& #[[2]] Rubine#! Greif zu!\x1B#Ja!&Nein!#",
+            "Willst Du #[[1]]#?&Deine letzte Chance!^Mein Spezial-Preis!&#[[2]] Rubine#! Greif zu!\x1B#Ja!&Nein!#",
             /*french*/
             "J'ai essayé d'être un vendeur de #haricots magiques#, mais j'étais mauvais au niveau du marketing et ça "
             "me courait sur le haricot...^Enfin bref, ça te dirait de m'acheter #[[1]]# pour #[[2]] "
