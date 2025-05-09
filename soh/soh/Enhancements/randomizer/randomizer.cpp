@@ -258,17 +258,19 @@ static const char* englishRupeeNames[190] = {
     "Zorkmids",
 };
 
-static const char* germanRupeeNames[80] = {
-    "Baht",       "Bananen",    "Bitcoin",   "Bonbons",       "Bratwürste", "Brause UFOs", "Brötchen", "Cent",
-    "Diamanten",  "Dinar",      "Diridari",  "Dogecoin",      "Dollar",     "Draken",      "ECU",      "Elexit",
-    "Erz",        "Erzbrocken", "Euro",      "EXP",           "Forint",     "Franken",     "Freunde",  "Gil",
-    "Gold",       "Groschen",   "Gulden",    "Gummibären",    "Heller",     "Juwelen",     "Karolin",  "Kartoffeln",
-    "Kies",       "Knete",      "Knochen",   "Kohle",         "Kraniche",   "Kreuzer",     "Kronen",   "Kronkorken",
-    "Kröten",     "Lira",       "Mark",      "Mäuse",         "Monde",      "Moorhühner",  "Moos",     "Münzen",
-    "Naira",      "Penunze",    "Pesa",      "Pfandflaschen", "Pfennig",    "Pfund",       "Pilze",    "Plastiks",
-    "Pokédollar", "Radieschen", "Rand",      "Rappen",        "Real",       "Rial",        "Riyal",    "Rubine",
-    "Rupien",     "Saphire",    "Schilling", "Seelen",        "Septime",    "Smaragde",    "Steine",   "Sterne",
-    "Sternis",    "Tael",       "Taler",     "Wagenchips",    "Won",        "Yen",         "Yuan",     "Zenny",
+static const char* germanRupeeNames[114] = {
+    "Baht",            "Baklava",       "Bananen",            "Bitcoin",         "Bonbons",      "Bonschen",        "Brause UFOs", "Bucks",             "Burek",       "Cent",
+    "Chickenwing",     "Diamanten",     "Dinar",              "Diridari",        "Dogecoin",     "Dollar",          "Draken",      "ECU",               "Eis",         "Elexit",
+    "Erz",             "Erzbrocken",    "Ethereum",           "Euro",            "EXP",          "Fartcoin",        "Forint",      "Franken",           "Freunde",     "Geister",
+    "Gil",             "Gold",          "Groschen",           "Gulden",          "Haribo",       "Heller",          "Juwelen",     "Kapseln",           "Karolin",     "Kartoffeln",
+    "Keks",            "Kies",          "Knete",              "Knochen",         "Knuspertaler", "Kohle",           "Kraniche",    "Kreuzer",           "Kronen",      "Kronkorken",
+    "Lauchcoins",      "Lira",          "Mana",               "Mark",            "Monde",        "Moos",            "Naira",       "Nugget",            "Penunze",     "Pesa",
+    "Peso",            "Pfandflaschen", "Pfennig",            "Pfund",           "Pillen",       "Pilze",           "Plastiks",    "Pok\x96""dollar",   "Poster",      "Puzzle",
+    "Radieschen",      "Rand",          "Rappen",             "Real",            "Rial",         "Riesennugget",    "Riyal",       "Rubine",            "Rupien",      "Saphire",
+    "Schilling",       "Schokobon",     "Seelen",             "Septime",         "Shitcoin",     "Smaragde",        "Solana",      "Sosis",             "Steine",      "Sterne",
+    "Sternis",         "Tael",          "Taler",              "Tokens",          "Wagenchips",   "Won",             "Wumpas",      "Yen",               "Yuan",        "Zenny",
+    "M\x93use",        "M\x9Enzen",     "Kr\x9Bten",          "D\x9Bner",        "W\x9Erstchen", "Kn\x9B" "del",    "R\x9Bsti",    "H\x9Brnli",         "R\x9E""ebli", "K\x9B""fte",
+    "Bratw\x9E""rste", "Br\x98""tchen", "Gummib\x93""bären",  "Moorh\x9E""hner"
 };
 
 static const char* frenchRupeeNames[40] = {
@@ -506,8 +508,8 @@ void Randomizer::LoadMerchantMessages() {
             "I tried to be a #magic bean# salesman, but it turns out my marketing skills weren't worth "
             "beans!^Anyway, want to buy #[[1]]# for #[[2]] Rupees#?\x1B#Yes&No#",
             /*german*/
-            "Ich habe versucht ein Vertreter für #Wundererbsen# zu werden, doch meine Verhandlungskünste waren nicht die Bohne wert.^"
-            "Ach egal, möchten Sie #[[1]]# für #[[2]] Rubine# kaufen?\x1B#Ja!&Nein!#",
+            "Ich habe versucht ein Vertreter für #Wundererbsen# zu werden, doch meine Verhandlungskünste waren nicht die Bohne wert. Ach egal...^"
+            "Willst Du #[[1]]#?&Deine letzte Chance!^ Mein Spezial-Preis!& #[[2]] Rubine#! Greif zu!\x1B#Ja!&Nein!#",
             /*french*/
             "J'ai essayé d'être un vendeur de #haricots magiques#, mais j'étais mauvais au niveau du marketing et ça "
             "me courait sur le haricot...^Enfin bref, ça te dirait de m'acheter #[[1]]# pour #[[2]] "
@@ -526,7 +528,7 @@ void Randomizer::LoadMerchantMessages() {
     CustomMessageManager::Instance->CreateMessage(
         Randomizer::merchantMessageTableID, TEXT_MEDIGORON,
         CustomMessage("How about buying #[[1]]# for #[[2]] Rupees#?\x1B#Buy&Don't buy#",
-                      /*german*/ "Möchtest Du #[[1]]# für #[[2]] Rubine# kaufen?\x1B#Klar!&Nie im Leben!#",
+                      /*german*/ "Möchtest Du #[[1]]#?^Für #[[2]] Rubine#!\x1B#Klar!&Nie im Leben!#",
                       /*french*/ "Veux-tu acheter #[[1]]# pour #[[2]] rubis#?\x1B#Acheter&Ne pas acheter#",
                       { QM_GREEN, QM_YELLOW, QM_GREEN }));
     /*spanish*/ // ¿Me compras #[[1]]# por #[[2]] rupias#?\x1B#Comprar&No comprar#
@@ -4936,7 +4938,7 @@ CustomMessage Randomizer::GetIceTrapMessage() {
         "#Titanic's revenge#.",
     };
 
-    static const char* const germanIceTrapMessages[23] = {
+    static const char* const germanIceTrapMessages[104] = {
         "Du bist ein #DUMMKOPF#!",
         "Du bist eine #Frostbeule#!",
         "#NARR#!",
@@ -4952,7 +4954,7 @@ CustomMessage Randomizer::GetIceTrapMessage() {
         "Bewahre einen #kühlen#! Kopf.",
         "Ganondorf setzt #Eisstrahl# ein. Das ist sehr effektiv!",
         "Ein Lächeln ist der beste Weg, um das #Eis# zu brechen!",
-        "#Eiskalt# lässt du meine Seele erfrier'n.",
+        "#Eiskalt# lässt Du meine Seele erfrier'n.",
         "Die #Titanic# hätte Angst vor Dir, @.",
         "Oh nein!",
         "Was die Dinosaurier getötet hat?&Die #Eiszeit#!",
@@ -4960,6 +4962,87 @@ CustomMessage Randomizer::GetIceTrapMessage() {
         "Never gonna #give you up#. Never gonna #let you down#. Never gonna run around and #desert you#.",
         "Danke #@#! Aber der Gegenstand ist in einem anderem Schloß!",
         "Kalt. Kalt. Kälter. #EISKALT#!",
+        "Von wegen #Belohnung#!",
+        "Ganon lacht dich aus.",
+        "Zelda wartet... aber nicht auf Dich!",
+        "Hyrule braucht Dich... aber nicht so!",
+        "Master-Schmerz statt Master-Schwert.",
+        "Das passiert wenn man alles looten möchte!",
+        "Ein kleiner Vorgeschmack auf Ganons Kühlschrank.",
+        "Ich hoffe, Du hast gespeichert.",
+        "Dein Gesicht, als Du die Truhe geöffnet hast... unbezahlbar.",
+        "Tut mir leid, aber das Item befindet sich in einer anderen Truhe.",
+        "Noch 5 solcher Truhen und Du bist abgehärtet.",
+        "Keine sorge. Ich bin genau so enttäuscht wie Du.",
+        "Epona läuft gerade ohne Dich los.",
+        "Wow! Ein echtes Nichts!",
+        "Du bist sowas von bereit für den Endboss. Nicht!",
+        "Loot? Nur für Gewinner!",
+        "Pure Enttäuschung.",
+        "RNG meint es nicht gut mit dir...",
+        "Link.exe hat ein Problem erkannt. Spiel wird heruntergefahren.",
+        "Die Truhe war leer, dein Verstand ebenso.",
+        "Hier für Dich, lecker #Eis#.",
+        "Das ist kein Item - das ist Karma.",
+        "Und wieder hat Dich 'ne Kiste besiegt.",
+        "Rauru lacht Dich aus.",
+        "Saria hat sich gerade entfreundet.",
+        "Prinzessin Ruto hat die Verlobung aufgelöst.",
+        "Kein Seed, kein Ärger!",
+        "Diese Truhe wurde Ihnen präsentiert von: ABSICHT!",
+        "Nicht heute.",
+        "Nächster halt, #Frosthausen#!",
+        "Genau so nützlich wie Navi im Bosskampf.",
+        "Zelda? Die kennt Dich nicht.",
+        "Zufall? Nein. Absicht!",
+        "Karma.exe erfolgreich ausgeführt.",
+        "Manchmal gewinnt man, aber Du gehörst nicht dazu.",
+        "#Eiskalt# versagt.",
+        "Tingle lacht Dich aus.",
+        "Du hörst Ganondorf dir folgendes zuflüstern.. \"Danke fürs Öffnen, aber das war mein #Müll#!\"",
+        "Navi: 'Hey, hör zu! Da ist... absolut #nichts# drin.",
+        "Truhe geöffnet, Hoffnung zerstört. Willkommen in Hyrule.",
+        "Die Truhe enthält: 100% pure #Enttäuschung#.",
+        "Na? Wieder zu viel von Malons #Mentos# genascht?",
+        "Du wurdest #eiskalt# beim Öffnen der Truhe erwischt.",
+        "Grats, Du hast Ganons alten #Eiswürfelvorrat# gefunden.",
+        "Die Truhe ist kälter als #Zoras Reich#... und genauso leer.",
+        "#Eis#? Klar, das ist der #kalte# Hauch der Enttäuschung!",
+        "Die Truhe ist so leer, sogar der #Yeti# aus Twilight Princess lacht.",
+        "Die Truhe enthält: 100% #gefrorene# Hoffnungslosigkeit.",
+        "Du hast eine Truhe geöffnet und den #Kälterekord# in Hyrule gebrochen.",
+        "Du hast TM16 erhalten: #Eissturm#!",
+        "Controller Disconnect, jetzt bist Du #gefreezed#.",
+        "Noch drei solcher Truhen, und dein Spielstand wird gelöscht.",
+        "Gengar setzt Schlecker ein! Du bist vollständig #paralysiert#!",
+        "Mumbo Jumbo verwandelt Dich in einen #Eisblock#. Haste jetzt 'nen coolen Look.",
+        "Willkommen in Donkey Kong Country: Tropical #Freeze#!",
+        "Gratuliere! Du hast das Spiel #gefreezed#.",
+        "Triforce des Mutes und trotzdem bekommst Du kalte Füße.",
+        "Fortschritt #eingefroren#. Bitte blasen Sie in die Cartridge.",
+        "Du bist nicht soft-locked. Du bist #frost-locked#.",
+        "Ein #frostiger# Wind weht durch die Truhe... leer, als hätte Kirby den ganzen Inhalt eingesaugt.",
+        "Ein #eisiger# Hauch weht dir entgegen.... Doch die Truhe bleibt #kalt# und leer.",
+        "Die Truhe ist von #Frost# versiegelt... drinnen nichts als eine #kalte#, #frostige# Enttäuschung!",
+        "#Frost# knistert bedrohlich in der Truhe - kein Schatz, nur ein #eisiger# Hohn!",
+        "Diese Falle zu finden ist so #frostig# wie Fangen spielen mit Chill Penguin.",
+        "#Eis# kann funkeln, was kannst Du?",
+        "Niete, selbst die Prinzessin ist enttäuscht.",
+        "Herzteil? Nein, #Eiskalt#!",
+        "Ratet mal wer wieder zu gierig war? Richtig... DU!",
+        "Ganondorf bedankt sich persönlich für deine Inkompetenz.",
+        "Der Spind von Davy Jones!",
+        "Herzog Onkled lacht Dich aus.",
+        "GEWINNER!",
+        "vERLIERER!",
+        "Drücke B, Unten und Select um zu überleben.",
+        "#Chill# mal jetzt.",
+        "Hier halt mal eben.",
+        "Sony lacht Dich aus",
+        "Dieses Item ist nicht in deinem Land verfügbar.",
+        "Es ist wichtig, die #Kühltruhe# mal für einen Tag auszuschalten.",
+        "#Kacknoob#!",
+        "Insert Rupee to continue...",
     };
 
     static const char* const frenchIceTrapMessages[83] = {
