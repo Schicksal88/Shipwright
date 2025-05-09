@@ -1652,7 +1652,7 @@ void StaticData::HintTable_Init() {
                                             /*french*/ "Selon moi, Ingo ne fait pas un très bon geôlier."));
 
     hintTextTable[RHT_JUNK50] = HintText(CustomMessage("You found a spiritual Stone! By which I mean, I worship Nayru.",
-                                            /*german*/ "Du hast einen Heiligen Stein gefunden!^ Also... eigentlich heißt das nur, daß ich Nayru verehre.",
+                                            /*german*/ "Du hast einen Heiligen Stein gefunden!^Also... eigentlich heißt das nur, daß ich Nayru verehre.",
                                             /*french*/ "Vous avez trouvé une Pierre Ancestrale! En effet, je vénère la déesse Hylia."));
 
     hintTextTable[RHT_JUNK51] = HintText(CustomMessage("Open your eyes.^Open your eyes.^Wake up, @.",
@@ -1977,27 +1977,27 @@ void StaticData::HintTable_Init() {
 
 
     hintTextTable[RHT_BRIDGE_VANILLA_HINT] = HintText(CustomMessage("$6The awakened ones require the #Shadow and Spirit Medallions# as well as the #Light Arrows#.^",
-                                                        /*german*/ "$6Die Weisen werden darauf warten, daß der Held das #Amulett des Schattens, Amulett der Geister# und die #Licht-Pfeile# sammelt.^",
+                                                        /*german*/ "$6Die Weisen, die darauf warten,&daß der Held das #Amulett des Schattens, Amulett der Geister#&und die #Licht-Pfeile# sammelt.^",
                                                         /*french*/ "$6Les êtres de sagesse attendront le héros muni des #Médaillons de l'Ombre et l'Esprit# et des #Flèches de Lumière#.^",
                                                                    {QM_RED, QM_YELLOW}));
                                                      // /*spanish*/$6Los sabios aguardarán a que el héroe obtenga tanto el #Medallón de las Sombras y el del Espíritu# junto
                                                                 // a la #flecha de luz#.^
 
     hintTextTable[RHT_BRIDGE_STONES_HINT] = HintText(CustomMessage("$0The awakened ones will await for the Hero to collect #[[d]] Spiritual Stone||s|#.^",
-                                                        /*german*/ "$0Die Weisen werden darauf warten, daß der Held #[[d]] |Heiligen Stein|Heilige Steine|# sammelt.^",
+                                                        /*german*/ "$0Die Weisen werden darauf&warten, daß der Held&#[[d]] |Heiligen Stein|Heilige Steine|# sammelt.^",
                                                         /*french*/ "$0Les êtres de sagesse attendront le héros muni de #[[d]] |Pierre Ancestrale|Pierres Ancestrales|#.^",
                                                                    {QM_BLUE}));
                                                      // /*spanish*/$0Los sabios aguardarán a que el héroe&obtenga #[[d]] |piedra espiritual|piedras espirituales|#.^
 
     hintTextTable[RHT_BRIDGE_MEDALLIONS_HINT] = HintText(CustomMessage("$8The awakened ones will await for the Hero to collect #[[d]] Medallion||s|#.^",
-                                                            /*german*/ "$8Die Weisen werden darauf warten, daß der Held #[[d]] Amulett||e|# sammelt.^",
+                                                            /*german*/ "$8Die Weisen werden darauf&warten, daß der Held&#[[d]] Amulett||e|# sammelt.^",
                                                             /*french*/ "$8Les êtres de sagesse attendront le héros muni de #[[d]] Médaillon||s|#.^",
                                                                        {QM_RED}));
                                                          // /*spanish*/$8Los sabios aguardarán a que el héroe&obtenga #[[d]] |medallón|medallones|#.^
 
     hintTextTable[RHT_BRIDGE_REWARDS_HINT] = HintText(CustomMessage("$CThe awakened ones will await for the Hero to collect #[[d]]# |#Spiritual Stone# or #Medallion#|"
                                                                      "#Spiritual Stones# and #Medallions#|.^",
-                                                         /*german*/ "$CDie Weisen werden darauf warten, daß der Held #[[d]]# |#Heiligen Stein# oder #Amulett#|"
+                                                         /*german*/ "$CDie Weisen werden darauf&warten, daß der Held&#[[d]]# |#Heiligen Stein# oder #Amulett#|"
                                                                      "#Heilige Steine# oder #Amulette#| sammelt.^",
                                                          /*french*/ "$CLes êtres de sagesse attendront le héros muni de #[[d]]# |#Pierre Ancestrale# ou #Médaillon#"
                                                                      "|#Pierres Ancestrales# ou #Médaillons#|.^",
@@ -2006,19 +2006,19 @@ void StaticData::HintTable_Init() {
                                                                     //#piedras espirtuales# y #medallones#|.^
 
     hintTextTable[RHT_BRIDGE_DUNGEONS_HINT] = HintText(CustomMessage("$mThe awakened ones will await for the Hero to conquer #[[d]] Dungeon||s|#.^",
-                                                          /*german*/ "$mDie Weisen werden darauf warten, daß der Held #[[d]] Labyrinth||e|# abschließt.^",
+                                                          /*german*/ "$mDie Weisen werden darauf&warten, daß der Held&#[[d]] Labyrinth||e|# abschließt.^",
                                                           /*french*/ "$mLes êtres de sagesse attendront la conquête de #[[d]] Donjon||s|#.^",
                                                                      {QM_PINK}));
                                                        // /*spanish*/$mLos sabios aguardarán a que el héroe complete #[[d]] mazmorra||s|#.^
 
     hintTextTable[RHT_BRIDGE_TOKENS_HINT] = HintText(CustomMessage("$sThe awakened ones will await for the Hero to collect #[[d]] Gold Skulltula Token||s|#.^",
-                                                        /*german*/ "$sDie Weisen werden darauf warten, daß der Held #[[d]] Skulltula-Symbol||e|# sammelt.^",
+                                                        /*german*/ "$sDie Weisen werden darauf&warten, daß der Held&#[[d]] Skulltula-Symbol||e|# sammelt.^",
                                                         /*french*/ "$sLes êtres de sagesse attendront le héros muni de #[[d]] Symbole||s| de Skulltula d'or#.^",
                                                                    {QM_YELLOW}));
                                                      // /*spanish*/$sLos sabios aguardarán a que el héroe obtenga #[[d]] símbolo||s| de skulltula dorada#.^
 
     hintTextTable[RHT_BRIDGE_GREG_HINT] = HintText(CustomMessage("$gThe awakened ones will await for the Hero to find #Greg#.^",
-	                                                  /*german*/ "$gDie Weisen werden darauf warten, daß der Held #Greg# findet.^",
+	                                                  /*german*/ "$gDie Weisen werden darauf&warten, daß der Held&#Greg# findet.^",
                                                       /*french*/ "$gLes êtres de sagesse attendront le héros muni de #Greg#.^",
                                                                  {QM_GREEN}));
 
@@ -2034,7 +2034,7 @@ void StaticData::HintTable_Init() {
                                                            // /*spanish*/$bY obtendrás la llave del #señor del mal# desde el #inicio#.^
 
     hintTextTable[RHT_GANON_BK_VANILLA_HINT] = HintText(CustomMessage("$bAnd the #evil one#'s key will be kept in a big chest #inside its tower#.^",
-                                                           /*german*/ "$bUnd der #Schlüssel des Bösen#, wird in der großen Truhe #im Teufelsturm# zu finden sein.^",
+                                                           /*german*/ "$bUnd der #Schlüssel des Bösen#,&wird in der großen Truhe&#im Teufelsturm# zu finden sein.^",
                                                            /*french*/ "$bAussi, la #clé du Malin# sera encoffrée #dans sa tour#.^",
                                                                       {QM_PINK, QM_LBLUE}));
                                                         // /*spanish*/$bY la llave del #señor del mal# aguardará en un gran cofre de #su torre#.^
@@ -2194,7 +2194,7 @@ void StaticData::HintTable_Init() {
 
     hintTextTable[RHT_ADULT_ALTAR_MEDALLIONS] = HintText(CustomMessage("An awakening voice from the Sacred Realm will call those destined to be Sages, who dwell in the #five temples#.^"
                                                                        "$8#[[1]]#...^$3#[[2]]#...^$4#[[3]]#...^$5#[[4]]#...^$6#[[5]]#...^$7#[[6]]#...^" ,
-                                                            /*german*/ "Beherrscht das Böse die Welt, weilen jene Weisen, die von der Stimme des Heiligen Reiches erweckt werden, noch in den #fünf Tempeln#.^"
+                                                            /*german*/ "Beherrscht das Böse die Welt, verweilen die Weisen, erweckt von der Stimme des Heiligen Reiches, noch in den #fünf Tempeln#.^"
                                                                        "$8#[[1]]#...^$3#[[2]]#...^$4#[[3]]#...^$5#[[4]]#...^$6#[[5]]#...^$7#[[6]]#...^",
                                                             /*french*/ "Quand le mal aura triomphé, une voix du Saint Royaume appellera ceux cachés dans les #cinq temples#, destinés^à être Sages.^"
                                                                        "$8#[[1]]#...^$3#[[2]]#...^$4#[[3]]#...^$5#[[4]]#...^$6#[[5]]#...^$7#[[6]]#...^",
@@ -2203,7 +2203,7 @@ void StaticData::HintTable_Init() {
                                                                     // $8#[[1]]#...^$3#[[2]]#...^$4#[[3]]#...^$5#[[4]]#...^$6#[[5]]#...^$7#[[6]]#...^
 
     hintTextTable[RHT_ADULT_ALTAR_TEXT_END] = HintText(CustomMessage("$kTogether with the Hero of Time, the awakened ones will return the light of peace to the world...",
-                                                        /*german*/ "$kZusammen mit dem Auserwählten werden diese ihre Kräfte einsetzen, um der Welt den Frieden wiederzugeben.",
+                                                        /*german*/ "$kZusammen mit dem Auserwählten werden diese ihre Kräfte&einsetzen, um der Welt den&Frieden wiederzugeben.",
                                                         /*french*/ "$kEnsemble avec le Héros du Temps, ces Sages emprisonneront le mal et réinstaureront la lumière de paix dans le monde..."));
                                                         // /*spanish*/Con el Héroe del Tiempo, aquellos&que despierten detendrán el mal y&volverán al mundo de luz la paz...
 
@@ -2212,20 +2212,20 @@ void StaticData::HintTable_Init() {
     ---------------------------*/
 
     hintTextTable[RHT_GANONDORF_HINT_LA_ONLY] = HintText(CustomMessage("Ha ha ha... You'll never beat me by reflecting my lightning bolts and unleashing the arrows from #[[1]]#!",
-                                                            /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, indem Du meine Blitze zurückschlägst und die Pfeile entfesselst, die #[[1]]# zu finden sind!",
+                                                            /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, indem Du meine Blitze zurückschlägst...^und die Pfeile entfesselst, die #[[1]]# zu finden sind!",
                                                             /*french*/ "Ha ha ha... Pauvre fou! Tu ne pourras jamais me vaincre sans les flèches que j'ai cachées dans #[[1]]#!",
                                                                        {QM_RED}));
                                                          // /*spanish*/Ja, ja, ja... Nunca me derrotarás reflejando mis esferas de energía y desplegando la flecha de luz de #[[1]]#!
 
     hintTextTable[RHT_GANONDORF_HINT_MS_ONLY] = HintText(CustomMessage("Ha ha ha... You'll never defeat me, drop a castle on me and finish me off with the sacred blade from #[[2]]#!",
-                                                            /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, ein Schloß auf mich werfen und mich mit der legendären Klinge niederstrecken, die #[[2]]# versteckt ist!",
+                                                            /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, ein Schloß auf mich werfen...^und mich mit der legendären Klinge niederstrecken, die #[[2]]# versteckt ist!",
                                                             /*french*/ "Ha ha ha... Pauvre fou! Tu ne pourras jamais me vaincre sans l'Épée de Légende cachée dans #[[2]]#!",
                                                                        {QM_RED}));
 
     hintTextTable[RHT_GANONDORF_HINT_LA_AND_MS] = HintText(CustomMessage("Ha ha ha... You'll never beat me by reflecting my lightning bolts and unleashing the arrows from #[[1]]#!"
                                                                          "^And even if you do, you'll never find the legendary blade hidden in #[[2]]#!",
-                                                              /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, indem Du meine Blitze zurückschlägst und die Pfeile entfesselst, die #[[1]]# zu finden sind!"
-																		 "^Und selbst wenn Du es tust, wirst Du niemals die legendäre Klinge finden, die #[[2]]# versteckt ist!",
+                                                              /*german*/ "Ha ha ha... Du wirst mich niemals besiegen, indem Du meine Blitze zurückschlägst...^und die Pfeile entfesselst, die #[[1]]# zu finden sind!"
+                                                                         "^Und selbst wenn Du es tust,&wirst Du niemals die legendäre&Klinge finden, die #[[2]]# versteckt ist!",
                                                               /*french*/ "Ha ha ha... Pauvre fou! Tu ne pourras jamais me vaincre sans les flèches que j'ai cachées dans #[[1]]#!"
                                                                          "^Et même si tu les trouves, tu ne touveras jamais l'Épée de Légende cachée dans #[[2]]#!",
                                                                          {QM_RED, QM_RED}));
@@ -2233,7 +2233,7 @@ void StaticData::HintTable_Init() {
                                                                       // ^E incluso si lo haces, nunca encontrarás la espada legendaria escondida en #[[2]]#!
 
     hintTextTable[RHT_SHEIK_HINT_LA_ONLY] = HintText(CustomMessage("I overheard Ganondorf say that he misplaced the #Light Arrows# in #[[1]]#.",
-                                                        /*german*/ "Ich habe Ganondorf sagen hören, dass er die #Licht-Pfeile# #[[1]]# verlegt hat.",
+                                                        /*german*/ "Ich habe Ganondorf sagen hören, daß er die #Licht-Pfeile# #[[1]]# verlegt hat.",
                                                         /*french*/ "J'ai entendu dire que Ganondorf aurait caché les #Flèches de Lumière# dans #[[1]]#.",
                                                                    {QM_YELLOW, QM_RED}));
 
@@ -2364,12 +2364,13 @@ void StaticData::HintTable_Init() {
                                                            {QM_GREEN}));
 
     hintTextTable[RHT_OOT_HINT] = HintText(CustomMessage("Bring the #Spiritual Stones# to the past so you can receive #[[1]]# from Zelda and learn #[[2]]#!",
-                                              /*german*/ "Bringe die #Heiligen Steine# in die Vergangenheit, damit Du #[[1]]# von Zelda erhältst und #[[2]]# lernst!",
+                                              /*german*/ "Bringe die #Heiligen Steine# in die Vergangenheit, damit Du #[[1]]# von...^"
+                                                         "Prinzessin Zelda erhältst und #[[2]]# lernst, um Hyrule vor dem Untergang zu bewahren!",
                                               /*french*/ "Amène les #Pierres Spirituelles# dans le passé et Zelda te donnera #[[1]]# et t'apprendra #[[2]]# !",
                                                          {QM_BLUE, QM_GREEN, QM_GREEN}));
 
     hintTextTable[RHT_SKULLS_HINT] = HintText(CustomMessage("Yeaaarrgh! I'm cursed!!^Please save me by destroying #[[d]] Spiders of the Curse# and I will give you my #[[1]]#!",
-                                                 /*german*/ "Aarrrgh! Ich bin verflucht!^Bitte rette mich, indem Du #[[d]] Skulltulas# zerstörst und ich werde Dir dafür #[[1]]# geben!",
+                                                 /*german*/ "Aarrrgh! Ich bin verflucht!^Bitte rette mich, indem Du&#[[d]] Skulltulas# zerstörst und ich&werde Dir dafür #[[1]]# geben!",
                                                  /*french*/ "Yeaaarrgh! Je suis maudit!^Détruit encore #[[d]] Araignées de la Malédiction# et j'aurai quelque chose à te donner! #([[1]])#",
                                                             {QM_YELLOW, QM_GREEN}));
 
@@ -2386,7 +2387,7 @@ void StaticData::HintTable_Init() {
     ---------------------------*/
 
     hintTextTable[RHT_GANON_JOKE01] = HintText(CustomMessage("Oh! It's @.&I was expecting someone called Sheik.&Do you know what happened to them?",
-                                                  /*german*/ "Oh! Du bist es @.&Ich habe eigentlich jemanden namens Shiek erwartet. Weißt du, was mit ihm passiert ist?",
+                                                  /*german*/ "Oh! Du bist es @.&Ich habe eigentlich jemanden namens Shiek erwartet. Weißt Du, was mit ihm passiert ist?",
                                                   /*french*/ "Ah, c'est @.&J'attendais un certain Sheik.&Tu sais ce qui lui est arrivé?"));
                                                // /*spanish*/¡Oh! Pero si es @.&Estaba esperando a alguien llamado Sheik. ¿Sabes qué puede haberle pasado?
 

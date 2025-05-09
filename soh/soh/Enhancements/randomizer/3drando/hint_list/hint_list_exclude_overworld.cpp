@@ -1626,7 +1626,7 @@ void StaticData::HintTable_Init_Exclude_Overworld() {
                                             /*french*/ "Selon moi, dans #une fontaine sous la maison des voleurs# repose #[[1]]#.", {QM_RED, QM_GREEN}));
 
     hintTextTable[RHT_GRAVEYARD_SHIELD_GRAVE_FAIRY] = HintText(CustomMessage("They say that within #a fountain behind a wall within a grave# rests #[[1]]#.",
-                                            /*german*/ "Man erzählt sich, daß innerhalb #eines Brunnens, in einem Grab hinter einer Mauer#, #[[1]]# |ruhe|ruhen|.",
+                                            /*german*/ "Man erzählt sich, daß innerhalb #eines Brunnens, hinter einer Mauer eines Grabes#, #[[1]]# |ruhe|ruhen|.",
                                             /*french*/ "Selon moi, dans #une fontaine derrière un mur dans une tombe# repose #[[1]]#.", {QM_RED, QM_GREEN}));
 
     hintTextTable[RHT_COLOSSUS_OASIS_FAIRY] = HintText(CustomMessage("They say that #restoring water to a dried oasis# reveals #[[1]]#.",
