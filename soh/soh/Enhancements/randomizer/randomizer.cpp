@@ -4500,14 +4500,9 @@ CustomMessage Randomizer::GetMapGetItemMessageWithHint(GetItemEntry itemEntry) {
         messageEntry.Replace("[[typeHint]]", Rando::StaticData::hintTextTable[RHT_DUNGEON_ORDINARY].GetHintMessage());
     }
 
-<<<<<<< HEAD
-    messageEntry.AutoFormat();
-||||||| a0e49f996
-=======
     // BUG: the icon is not in the message yet so are not accounted for, so overflows are possible
     messageEntry.AutoFormat();
 
->>>>>>> origin/develop
     return messageEntry;
 }
 
